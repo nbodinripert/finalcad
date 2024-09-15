@@ -1,0 +1,7 @@
+.badge {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  width: fit-content;
+  padding: 2px 7px;
+}
