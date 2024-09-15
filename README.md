@@ -4,17 +4,18 @@ Ceci est une application web contenant trois pages principales : une page de con
 
 ## Installation et utilisation
 
-1. Clonez ce dépôt à l'aide de la commande `git clone`.
-2. Naviguez vers le dossier du projet avec `cd nom_du_projet`.
-3. Installez toutes les dépendances nécessaires en utilisant `npm install`.
-4. Lancez l'application en utilisant `npm run dev`.
-5. Ouvrez votre navigateur et accédez à `http://localhost:5173/`.
+1. Clonez ce dépôt à l'aide de la commande `git clone`
+2. Naviguez vers le dossier du projet avec `cd nom_du_projet`
+3. Installez toutes les dépendances nécessaires en utilisant `npm install`
+4. Lancez l'application en utilisant `npm run dev`
+5. Ouvrez votre navigateur et accédez à `http://localhost:5173/`
 
 ## Pages
 
 - Connexion
   - reproduction de la maquette fournie, avec une authentification via l'API fournie
-  - gestion d'erreur si le couple login/mdp échoue
+  - affichage d'un toast d'erreur si le couple login/mdp échoue
+  - utilisation du local storage pour la persistance du login
 - Vue de liste
   - reproduction de la maquette fournie, avec une liste d'éléments récupérés à partir de l'API fournie
   - nombre dynamique d'items affichés en fonction de la hauteur de l'écran
@@ -45,6 +46,16 @@ Ceci est une application web contenant trois pages principales : une page de con
 - react-toastify
 
 Aucune bibilothèque UI n'a été volontairement utilisée afin de ne pas surcharger inutilement le projet
+
+## A faire : nouvelles fonctionnalités
+
+- internationalisation avec un package comme i18n ou lingui
+- mode dark
+
+## Axes d'amélioration
+
+- utiliser Sass ou Less
+- utiliser des variables css
 
 ## Contribution
 
