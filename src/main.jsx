@@ -3,14 +3,15 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { projectLoader, projectsLoader } from "./api/loader";
 import "./fonts.css";
 import "./index.css";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import { projectLoader } from "./pages/ProjectPage/loader";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import { projectsLoader } from "./pages/ProjectsPage/loader";
 
 const router = createBrowserRouter([
   {

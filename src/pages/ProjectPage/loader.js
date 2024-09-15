@@ -1,12 +1,5 @@
 import { redirect } from "react-router-dom";
-import { fetchMember, fetchPhase, fetchProject, fetchProjects } from "./api";
-
-export const projectsLoader = async () => {
-  const token = localStorage.getItem("finalcad.token");
-  if (!token) throw redirect("/login");
-  const projects = await fetchProjects(token);
-  return { projects };
-};
+import { fetchMember, fetchPhase, fetchProject } from "../../api/api";
 
 export const projectLoader = async ({ params }) => {
   const token = localStorage.getItem("finalcad.token");
