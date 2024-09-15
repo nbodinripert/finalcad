@@ -57,32 +57,37 @@ const ProjectsPage = () => {
           </tbody>
         </table>
       </div>
-      <div className="projects-table-pagination">
-        <button onClick={() => setCurrentPage(0)} disabled={currentPage === 0}>
-          {"<<"}
-        </button>
-        <button
-          onClick={() => setCurrentPage(currentPage - 1)}
-          disabled={currentPage === 0}
-        >
-          {"<"}
-        </button>
-        <span>
-          {currentPage + 1} / {totalPages}
-        </span>
-        <button
-          onClick={() => setCurrentPage(currentPage + 1)}
-          disabled={currentPage >= totalPages - 1}
-        >
-          {">"}
-        </button>
-        <button
-          onClick={() => setCurrentPage(totalPages - 1)}
-          disabled={currentPage >= totalPages - 1}
-        >
-          {">>"}
-        </button>
-      </div>
+      {totalPages > 1 && (
+        <div className="projects-table-pagination">
+          <button
+            onClick={() => setCurrentPage(0)}
+            disabled={currentPage === 0}
+          >
+            {"<<"}
+          </button>
+          <button
+            onClick={() => setCurrentPage(currentPage - 1)}
+            disabled={currentPage === 0}
+          >
+            {"<"}
+          </button>
+          <span>
+            {currentPage + 1} / {totalPages}
+          </span>
+          <button
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={currentPage >= totalPages - 1}
+          >
+            {">"}
+          </button>
+          <button
+            onClick={() => setCurrentPage(totalPages - 1)}
+            disabled={currentPage >= totalPages - 1}
+          >
+            {">>"}
+          </button>
+        </div>
+      )}
     </div>
   );
   //#endregion

@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-.home-page h1,
+.home-page :is(h1, h2, h3, h4, h5, h6),
 .home-page p {
   margin: 0;
 }
