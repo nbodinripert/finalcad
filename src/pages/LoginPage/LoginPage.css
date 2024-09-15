@@ -63,6 +63,7 @@
 
 .login-page-form button:disabled {
   background-color: #fdc097;
+  cursor: auto;
 }
 
 .login-page-access {
