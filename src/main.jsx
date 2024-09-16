@@ -32,7 +32,6 @@ const router = createBrowserRouter([
       {
         path: "/projects/:projectId",
         element: <ProjectPage />,
-        errorElement: <ErrorPage />,
         loader: projectLoader,
         handle: {
           crumb: (data) => <span>{data.project.name}</span>,
